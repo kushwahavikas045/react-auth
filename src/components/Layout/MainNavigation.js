@@ -4,23 +4,32 @@ import { Menu, Dropdown, Avatar } from 'antd';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { UserOutlined } from '@ant-design/icons';
-const menu = (
-  <Menu>
-    <Menu.Item key="0">
-      <Link to='/deshboard'>Deshboard</Link>
-    </Menu.Item>
-    <Menu.Item key="1">
-      <Link to='/education'>Education</Link>
-    </Menu.Item>
-    <Menu.Item key="2">
-      <Link to='/experience'>Experience</Link>
-    </Menu.Item>
-    <Menu.Divider />
-    <Menu.Item key="3">Logout</Menu.Item>
-  </Menu>
-);
+import {useDispatch} from 'react-redux';
+import { setLogout } from '../../action/auth';
 
+//main navigation
 const MainNavigation = () => {
+ const dispatch = useDispatch();
+  const handleLogout = () => {
+    dispatch(setLogout());
+  }
+
+  const menu = (
+    <Menu>
+      <Menu.Item key="0">
+        <Link to='/deshboard'>Deshboard</Link>
+      </Menu.Item>
+      <Menu.Item key="1">
+        <Link to='/education'>Education</Link>
+      </Menu.Item>
+      <Menu.Item key="2">
+        <Link to='/experience'>Experience</Link>
+      </Menu.Item>
+      <Menu.Divider />
+      <Menu.Item key="3" onClick={handleLogout}>Logout</Menu.Item>
+    </Menu>
+  );
+
   const { isAuth, user } = useSelector(state => state.auth);
   const userAccess = isAuth && user.registered && (
     <>
@@ -44,7 +53,7 @@ const MainNavigation = () => {
       title="React People"
       subTitle="spread reactive nature in developer"
       extra={
-        userAccess ? (userAccess) : (<Link to='/login'><Button key="0" icon={<UserOutlined />}>Login</Button></Link>)
+        userAccess ? (userAccess) : (<Link to='/education'><Button key="5" icon={<UserOutlined />}>Education</Button></Link>)
       }
     />
   )

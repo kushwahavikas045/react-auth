@@ -1,20 +1,25 @@
-import React from 'react'
+import React,{Suspense} from 'react'
 import MainNavigation from './components/Layout/MainNavigation';
 import { Switch, Route, Redirect, BrowserRouter } from 'react-router-dom';
-import Hero from './components/Layout/Hero';
-import Signup from './components/Auth/Signup';
-import Login from './components/Auth/Login';
-import Activate from './components/Activate/Activate';
-import Deshboard from './components/Deshboard/Deshboard';
+import Loading from './components/Layout/Loading';
 import { useSelector } from 'react-redux';
-import Education from './components/Deshboard/Education';
+import Experience from './components/Deshboard/Experience';
 
+//lazy loading
+const Hero = React.lazy(() =>  import('./components/Layout/Hero'));
+const Signup = React.lazy(() => import ('./components/Auth/Signup'));
+const Login = React.lazy(() => import ('./components/Auth/Login'));
+const Activate = React.lazy(() => import ('./components/Activate/Activate'));
+const Deshboard = React.lazy(() => import ('./components/Deshboard/Deshboard'));
+const Education = React.lazy(() => import ('./components/Deshboard/Education'));
+
+//main app
 const App = () => {
 
-
-  return (
+    return (
     <BrowserRouter>
     <MainNavigation />
+    <Suspense fallback = {<Loading/>}>
     <Switch>
         <GuestRoute path="/" exact>
             <Hero />
@@ -31,17 +36,22 @@ const App = () => {
         <ProtectedRoute path="/deshboard">
             <Deshboard />
         </ProtectedRoute>
-        <ProtectedRoute path="/education">
-            <Education/>
+        <ProtectedRoute path="/experience">
+            <Experience/>
         </ProtectedRoute>
+        <Route path="/education">
+            <Education/>
+        </Route>
 
     </Switch>
+    </Suspense>
 </BrowserRouter>
   )
 }
 
-//guest route
+//guest route ---> (guest user)
 const GuestRoute = ({ children, ...rest }) => {
+
   const {isAuth} = useSelector((state) => state.auth);
   return (
       <Route
@@ -61,7 +71,8 @@ const GuestRoute = ({ children, ...rest }) => {
       ></Route>
   );
 };
-//activate route access
+
+//activate route access ---> for login user (have token but not activated)
 const SemiProtectedRoute = ({ children, ...rest }) => {
     const {isAuth, activated} = useSelector((state) => state.auth);
 
@@ -90,6 +101,8 @@ const SemiProtectedRoute = ({ children, ...rest }) => {
       ></Route>
   );
 };
+
+// protected route (user which have token and activated)
 const ProtectedRoute = ({ children, ...rest }) => {
     const {isAuth,activated} = useSelector((state) => state.auth);
 

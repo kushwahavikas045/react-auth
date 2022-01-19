@@ -41,3 +41,9 @@ export const login = (email, password, history) => async(dispatch) =>{
         console.log(error);
     }
 }
+
+export const setLogout = () =>{
+    return dispatch =>{
+       dispatch({type:'LOGOUT'});
+    }
+}

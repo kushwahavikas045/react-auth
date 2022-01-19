@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { fetchAllSchool, fetchDetailsEducation } from '../../https/api';
 import Loading from '../Layout/Loading';
-import { Pagination, Result, Button } from 'antd';
+import { Pagination, Result} from 'antd';
 import styles from './Education.module.css';
 import EducationItem from './EducationItems';
 import EducationDetails from './EducationDetails';
@@ -14,12 +14,17 @@ const Education = () => {
     const [postsPerPage] = useState(6);
     const [sideData, setSideData] = useState(true);
     const [details, setDetails] = useState({});
-
+    const [error, setError] = useState(false);
     useEffect(() => {
         const fetchPosts = async () => {
             setLoading(true);
+           try {
             const res = await fetchAllSchool();
             setPosts(res.data);
+            setError(false)
+           } catch (err) {
+               setError(true);
+           }
             setLoading(false);
         };
 
@@ -37,9 +42,11 @@ const Education = () => {
 
     //handleId
     const handleSingleId = async(id) => {
+        setLoading(true);
         const {data} = await fetchDetailsEducation(id);
             setDetails(data);
             setSideData(false);
+            setLoading(false);
 
     }
 
@@ -58,17 +65,13 @@ const Education = () => {
                     {sideData ?
                     <Result
                     style={{marginTop:'20px'}}
-                        title="Your operation has been executed"
-                        extra={
-                            <Button type="primary" key="console">
-                                Go Console
-                            </Button>
-                        }
+                        title="Click on list for Details description"
                     /> : (
-                        <EducationDetails details={details}/>
+                        <EducationDetails details={details} loading = {loading}/>
                     )}
                 </div>
             </div>
+            {error && <h1 style={{color:'red'}}>Something went wrong</h1>}
         </>
     )
 }

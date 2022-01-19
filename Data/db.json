@@ -27,11 +27,21 @@
       "company": "Ecosmob technology",
       "status": "trainee engineer",
       "id": 4
+    },
+    {
+      "name": "vikas00",
+      "email": "kushwahavikas045@gmail.com",
+      "id": 5
+    },
+    {
+      "name": "vikas0077",
+      "email": "kushwahavikas045@gmail.com",
+      "id": 6
     }
   ],
   "schools": [
     {
-      "id" : 1,
+      "id": 1,
       "name": "J.K. Mullen High School",
       "website": "http://www.mullenhigh.com",
       "levels": [
@@ -46,7 +56,7 @@
         "Java"
       ],
       "money_needed": true,
-      "online_only": false,
+      "online_only": true,
       "number_of_students": null,
       "contact_name": "Mullen High School",
       "contact_number": "3037611764",
@@ -63,7 +73,7 @@
       "source": "user"
     },
     {
-      "id" : 2,
+      "id": 2,
       "name": "Lynn Classical High School",
       "website": "http://www.lynnclassical.org",
       "levels": [
@@ -78,7 +88,7 @@
         "Java"
       ],
       "money_needed": false,
-      "online_only": false,
+      "online_only": true,
       "number_of_students": null,
       "contact_name": "Stephen Brass",
       "contact_number": "781-477-7404",
@@ -95,6 +105,7 @@
       "source": "user"
     },
     {
+      "id": 34,
       "name": "South Anchorage HS",
       "website": "http://www.asdk12.org/schools/south/pages/",
       "levels": [
@@ -104,11 +115,9 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": "",
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
-      "online_only": false,
+      "online_only": true,
       "number_of_students": null,
       "contact_name": "",
       "contact_number": "907-742-6200",
@@ -125,7 +134,7 @@
       "source": "user"
     },
     {
-      "id" : 3,
+      "id": 3,
       "name": "Wasilla High School",
       "website": "http://www.matsuk12.us/Domain/3108",
       "levels": [
@@ -135,9 +144,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -156,7 +163,7 @@
       "source": "csta"
     },
     {
-      "id" : 4,
+      "id": 4,
       "name": "Alabama School of Fine Arts",
       "website": "http://www.asfa.k12.al.us/",
       "levels": [
@@ -166,9 +173,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -187,7 +192,7 @@
       "source": "csta"
     },
     {
-      "id" : 5,
+      "id": 5,
       "name": "Alabama School of Mathematics and Science",
       "website": "http://www.asms.net/",
       "levels": [
@@ -197,9 +202,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -218,7 +221,7 @@
       "source": "csta"
     },
     {
-      "id" : 6,
+      "id": 6,
       "name": "Alma Bryant High School",
       "website": "http://bryant.mcs.schoolinsites.com/",
       "levels": [
@@ -228,9 +231,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -249,7 +250,7 @@
       "source": "csta"
     },
     {
-      "id" : 7,
+      "id": 7,
       "name": "American Christian Academy",
       "website": "http://www.acacademy.com/",
       "levels": [
@@ -259,9 +260,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -279,7 +278,8 @@
       "country": "United States",
       "source": "csta"
     },
-    {"id" : 8,
+    {
+      "id": 8,
       "name": "Bessemer Center for Technology",
       "website": "http://bessemer.bcst.schoolinsites.com/",
       "levels": [
@@ -289,9 +289,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -310,7 +308,7 @@
       "source": "csta"
     },
     {
-      "id" : 9,
+      "id": 9,
       "name": "Bob Jones High School",
       "website": "http://bjhs.madisoncity.k12.al.us/",
       "levels": [
@@ -320,9 +318,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -341,7 +337,7 @@
       "source": "csta"
     },
     {
-      "id" : 10,
+      "id": 10,
       "name": "Dadeville High School",
       "website": "http://www.tallapoosak12.org/dhs",
       "levels": [
@@ -351,9 +347,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -372,7 +366,7 @@
       "source": "csta"
     },
     {
-      "id" : 11,
+      "id": 11,
       "name": "Dale County Christian School",
       "website": "http://dccs.ewellbaptist.org/",
       "levels": [
@@ -382,9 +376,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -403,7 +395,7 @@
       "source": "csta"
     },
     {
-      "id" : 12,
+      "id": 12,
       "name": "Demopolis High School",
       "website": "http://www.dcsedu.com/education/school/school.php?sectionid=2034&linkid=nav-menu-container-1-14662",
       "levels": [
@@ -413,9 +405,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -434,7 +424,7 @@
       "source": "csta"
     },
     {
-      "id" : 13,
+      "id": 13,
       "name": "Elmore County High School",
       "website": "http://elmorecounty.ech.schoolinsites.com/",
       "levels": [
@@ -444,9 +434,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -465,7 +453,7 @@
       "source": "csta"
     },
     {
-      "id" : 4,
+      "id": 4,
       "name": "Emmanuel Christian School",
       "website": "http://emmanuelchristian.org/",
       "levels": [
@@ -475,9 +463,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -496,7 +482,7 @@
       "source": "csta"
     },
     {
-      "id" : 15,
+      "id": 15,
       "name": "Houston County Career and Technical Center",
       "website": "https://sites.google.com/site/houstoncountycareertech/home",
       "levels": [
@@ -506,9 +492,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -527,7 +511,7 @@
       "source": "csta"
     },
     {
-      "id" : 16,
+      "id": 16,
       "name": "NCTHS",
       "website": "http://www.hsv.k12.al.us/schools/high/nchs/",
       "levels": [
@@ -537,9 +521,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -558,7 +540,7 @@
       "source": "csta"
     },
     {
-      "id" : 17,
+      "id": 17,
       "name": "Oakwood Adventist Academy",
       "website": "http://www.oa.oakwood.edu/",
       "levels": [
@@ -568,9 +550,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -589,7 +569,7 @@
       "source": "csta"
     },
     {
-      "id" : 18,
+      "id": 18,
       "name": "Southern Academy",
       "website": "http://southernacademy.net/",
       "levels": [
@@ -599,9 +579,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -619,7 +597,8 @@
       "country": "United States",
       "source": "csta"
     },
-    {"id" : 19,
+    {
+      "id": 19,
       "name": "Tuscaloosa Academy",
       "website": "http://www.tuscaloosaacademy.org/",
       "levels": [
@@ -629,9 +608,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -650,7 +627,7 @@
       "source": "csta"
     },
     {
-      "id" : 20,
+      "id": 20,
       "name": "Tuscaloosa Center for Technology",
       "website": "http://www.tct.tusc.k12.al.us/",
       "levels": [
@@ -660,9 +637,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -681,7 +656,7 @@
       "source": "csta"
     },
     {
-      "id" : 21,
+      "id": 21,
       "name": "West Morgan High School",
       "website": "http://www.westmorganhighschool.org/",
       "levels": [
@@ -691,9 +666,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -712,7 +685,7 @@
       "source": "csta"
     },
     {
-      "id" : 22,
+      "id": 22,
       "name": "Westminster Christian Academy",
       "website": "http://www.wca-hsv.org/",
       "levels": [
@@ -722,9 +695,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": true,
       "online_only": false,
       "number_of_students": null,
@@ -743,7 +714,7 @@
       "source": "csta"
     },
     {
-      "id" : 23,
+      "id": 23,
       "name": "Wilson School",
       "website": "http://wilson.lce.schoolinsites.com/",
       "levels": [
@@ -753,9 +724,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -774,7 +743,7 @@
       "source": "csta"
     },
     {
-      "id" : 24,
+      "id": 24,
       "name": "Heber Springs High School",
       "website": "http://hs.hssd.k12.ar.us/",
       "levels": [
@@ -784,9 +753,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -805,7 +772,7 @@
       "source": "csta"
     },
     {
-      "id" : 25,
+      "id": 25,
       "name": "LISA Academy",
       "website": "http://www.lisaacademy.org/",
       "levels": [
@@ -815,9 +782,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -836,7 +801,7 @@
       "source": "csta"
     },
     {
-      "id" : 26,
+      "id": 26,
       "name": "LISA Academy - NLR",
       "website": "http://www.lisanorth.org/",
       "levels": [
@@ -846,9 +811,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -867,7 +830,7 @@
       "source": "csta"
     },
     {
-      "id" : 27,
+      "id": 27,
       "name": "Mammoth Spring High School",
       "website": "http://www.edline.net/pages/Mammoth_Spring_High_School",
       "levels": [
@@ -877,9 +840,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -898,7 +859,7 @@
       "source": "csta"
     },
     {
-      "id" : 28,
+      "id": 28,
       "name": "Manila High School",
       "website": "http://mps.crsc.k12.ar.us/manila_high_sch.htm",
       "levels": [
@@ -908,9 +869,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -929,7 +888,7 @@
       "source": "csta"
     },
     {
-      "id" : 29,
+      "id": 29,
       "name": "Mt. Vernon - Enola",
       "website": "http://mve.k12.ar.us/links.htm",
       "levels": [
@@ -939,9 +898,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -960,7 +917,7 @@
       "source": "csta"
     },
     {
-      "id" : 30,
+      "id": 30,
       "name": "Rogers High School",
       "website": "http://rhs.rogersschools.net/?sessionid=dea67a79504242915e00eaec7880b42d&t",
       "levels": [
@@ -970,9 +927,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -991,7 +946,7 @@
       "source": "csta"
     },
     {
-      "id" : 32,
+      "id": 32,
       "name": "Springdale Har-Ber High School",
       "website": "http://springdalehb.sharpschool.net/",
       "levels": [
@@ -1001,9 +956,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": "",
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -1022,7 +975,7 @@
       "source": "csta"
     },
     {
-      "id" : 33,
+      "id": 33,
       "name": "Valley View High School",
       "website": "http://blazers.k12.ar.us/HighSchool/index.htm",
       "levels": [
@@ -1032,9 +985,7 @@
       "format_description": "Daily programming class",
       "gender": "Both",
       "description": null,
-      "languages": [
-
-      ],
+      "languages": [],
       "money_needed": false,
       "online_only": false,
       "number_of_students": null,
@@ -1053,5 +1004,4 @@
       "source": "csta"
     }
   ]
-
 }

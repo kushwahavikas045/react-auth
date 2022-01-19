@@ -32,7 +32,13 @@ function authReducers(state = initialState, action){
                 ...state,
                 activated: payload
             }
-
+        case 'LOGOUT':
+            return{
+                ...state,
+                user: null,
+                isAuth:false,
+                activated: false
+            }
         default:
             return state;
 
